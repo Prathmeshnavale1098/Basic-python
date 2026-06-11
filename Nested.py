@@ -101,10 +101,35 @@ for i in range (1,n+1):
         print("*",end="")
     print()
     
-n=5
+'''n=5
 for i in range (n,0,-1):
     for k in range (n-i):
         print(" ",end="")
     for j in range (2*i-1):
         print("*",end="")
+    print()'''
+
+'''n=4
+ch=ord('A')
+for i in range(1,n):
+    for j in range(1,i+1):
+        if (ch%2==0):
+            print(chr(ch).lower(),end="")
+            ch+=1
+        else:
+            print(chr(ch),end="")
+            ch+=1
+    print(6'''
+
+'''for i in range(4):
+    print("*")
+print("*"*6)'''
+
+'''n = 5
+for i in range(n):
+    for j in range(n):
+        if i == 0 or j == n // 2:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
     print()'''
