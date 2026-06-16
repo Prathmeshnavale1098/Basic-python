@@ -61,3 +61,90 @@ d={}
 for i in s:
     d[i]=s.count(i)
 print(d)'''
+
+#Function with no parameter
+'''def f1():
+    return 10+20,2*3
+print(f1())
+a,b=f1()
+print(f1())'''
+
+#Function with Parameter
+'''def f1(a,b):
+    return(a**b)
+print(f1(2,3))
+a=f1(2,3)
+print(a)'''
+
+#Fuction with multiple arguments
+'''def f1(*a):
+    print(sum(a))
+    #print(a[2])
+f1(1,2,3)
+f1(10,20,30,40)
+f1(35)'''
+
+#Function with positional arguments
+'''def f1(x,y):
+    print(x,y)
+f1(y=10,x=20)
+f1(10,20)'''
+
+#Function with keyword argument
+'''def f1(**kargs):
+    print(kargs)
+    print(len(kargs))
+f1(x=10,y=30,z=20)
+f1(a=1,b=2)
+f1(n=100)'''
+
+#call back values
+'''def f1(x,y):
+    print(x,y)
+    x=100
+    y=200
+    print(x,y)
+f1(10,20)
+x=1
+y=2
+print(x,y)
+x+=3
+print(x,y)'''
+
+'''def f1(x,y):
+    x,y=y,x
+x=10
+y=20
+f1(x,y)
+print(x,y)'''
+
+#Function with call by referance
+'''def f1(l):
+    l[0]=100
+l=[1,2,3]
+f1(l)
+print(l)'''
+
+#WAF that access a number and check wheter its perfect number or not
+'''def perfect(s):
+    sum=0
+    for i in range(1,s):
+        if s%i==0:
+            sum+=i
+    if sum==s:
+        print("That is a perfect number:",s)
+    else:
+        print("That is not perfect number:",s)
+s=int(input("Enter a number to check"))
+perfect(s)'''
+
+#WAP in which function accept list having even number of elements and swap elements at adjustent position
+'''def f(l):
+    for i in range(0,len(l),2):
+        l[i],l[i+1]=l[i+1],l[i]
+    print(l)
+l=[1,2,3,4,5,6]
+if (len(l)%2==0):
+    f(l)
+else:
+    print("List don't have a even numbers")'''
